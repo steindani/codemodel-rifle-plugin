@@ -1,0 +1,30 @@
+{
+  "name": "codemodel",
+  "displayName": "codemodel",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "steindani",
+  "engines": {
+    "vscode": "^0.10.8"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "*"
+  ],
+  "main": "./out/src/extension",
+  "scripts": {
+      "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+      "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+      "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "typescript": "^1.7.5",
+    "vscode": "^0.11.0"
+  },
+  "dependencies": {
+    "request": "^2.69.0"
+  }
+}
